@@ -1,4 +1,4 @@
-FROM rust:bookworm as builder
+FROM docker.zhubby.com/library/rust:bookworm as builder
 RUN apt update && apt install -y libssl-dev
 WORKDIR /home/rust/src
 COPY . .
